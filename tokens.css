@@ -1,0 +1,47 @@
+:root {
+
+  /* Colors*/
+
+  --brand-primary:   #005BE2;
+  --brand-secondary: #143154;
+
+  --interactive-primary:   #005BE2;
+  --interactive-secondary: #1A1A1A;
+  --interactive-tertiary:  #F3F3F3;
+
+  --content-primary:   #1A1A1A;
+  --content-secondary: #6D6F70;
+  --content-tertiary:  #FFFFFF;
+  --content-link:      #1A1A1A;
+
+  --background-screen: #FFFFFF;
+
+  --border-neutral:  #C7D3D9;
+  --border-hover:    #1A1A1A;
+
+
+  --status-negatie: #CC0F26;
+  --status-positive: #078A00;
+
+  /* Typography */
+  --font-family-base: 'Manrope', sans-serif;
+
+  --font-size-sm:  12px;
+
+
+  --font-weight-regular: 400;
+
+  /* Spacing */
+  --spacing-sm:  12px;
+  --spacing-md:  16px;
+  --spacing-lg:  24px;
+
+  /* Radius */
+  --radius-md: 8px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+
+  /* Layout */
+  --sidebar-width: 237px;
+}
