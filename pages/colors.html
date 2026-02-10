@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors – Inventa Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="../src/logo.svg" alt="Inventa" class="sidebar-logo-img">
+    </div>
+    <nav class="sidebar-nav">
+      <a href="logo.html" class="sidebar-nav-item">Logo</a>
+      <a href="colors.html" class="sidebar-nav-item active">Colors</a>
+      <a href="#" class="sidebar-nav-item">Buttons</a>
+      <a href="#" class="sidebar-nav-item">Form inputs</a>
+      <a href="#" class="sidebar-nav-item">Tabs and navigation</a>
+      <a href="#" class="sidebar-nav-item">Icons</a>
+      <a href="#" class="sidebar-nav-item">Padding</a>
+      <a href="#" class="sidebar-nav-item">Photography</a>
+      <a href="#" class="sidebar-nav-item">Radius</a>
+      <a href="#" class="sidebar-nav-item">Size</a>
+      <a href="#" class="sidebar-nav-item">Spacing</a>
+      <a href="#" class="sidebar-nav-item">Transitions</a>
+      <a href="#" class="sidebar-nav-item">Typography</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <h1 class="page-title">Colors</h1>
+
+    <!-- Brand -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Brand</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- brand-primary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--brand-primary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--brand-primary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#005BE2</p>
+          </div>
+        </div>
+        <!-- brand-secondary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--brand-secondary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--brand-secondary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#143154</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Interactive</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- interactive-primary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--interactive-primary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-primary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#005BE2</p>
+          </div>
+        </div>
+        <!-- interactive-secondary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--interactive-secondary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-secondary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#1A1A1A</p>
+          </div>
+        </div>
+        <!-- interactive-tertiary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--interactive-tertiary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-tertiary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#F3F3F3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Content</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- content-primary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--content-primary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--content-primary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#1A1A1A</p>
+          </div>
+        </div>
+        <!-- content-secondary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--content-secondary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--content-secondary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#6D6F70</p>
+          </div>
+        </div>
+        <!-- content-tertiary -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--content-tertiary);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--content-tertiary</p>
+            <p class="text-sm text-[var(--content-secondary)]">#FFFFFF</p>
+          </div>
+        </div>
+        <!-- content-link -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--content-link);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--content-link</p>
+            <p class="text-sm text-[var(--content-secondary)]">#1A1A1A</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Background</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- background-screen -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--background-screen);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--background-screen</p>
+            <p class="text-sm text-[var(--content-secondary)]">#FFFFFF</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Border -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Border</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- border-neutral -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--border-neutral);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--border-neutral</p>
+            <p class="text-sm text-[var(--content-secondary)]">#C7D3D9</p>
+          </div>
+        </div>
+        <!-- border-hover -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--border-hover);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--border-hover</p>
+            <p class="text-sm text-[var(--content-secondary)]">#1A1A1A</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status -->
+    <section class="page-section mb-10">
+      <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Status</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- status-negative -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--status-negative);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--status-negative</p>
+            <p class="text-sm text-[var(--content-secondary)]">#CC0F26</p>
+          </div>
+        </div>
+        <!-- status-positive -->
+        <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
+          <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--status-positive);"></div>
+          <div>
+            <p class="text-sm font-semibold text-[var(--content-primary)]">--status-positive</p>
+            <p class="text-sm text-[var(--content-secondary)]">#078A00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

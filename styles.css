@@ -98,26 +98,3 @@ body {
   color: var(--content-secondary);
 }
 
-/* Logo display */
-.logo-cards {
-  display: flex;
-  gap: var(--spacing-lg);
-}
-
-.logo-card {
-  flex: 1;
-  height: 60vh;
-  height: 60dvh;
-  background-color: var(--interactive-tertiary);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px;
-}
-
-.logo-display {
-  width: 70%;
-  height: auto;
-  object-fit: contain;
-}
