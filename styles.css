@@ -21,7 +21,7 @@ body {
   width: var(--sidebar-width);
   height: 100vh;
   padding: var(--spacing-lg);
-  border-right: 1px solid var(--color-border);
+  border-right: 1px solid var(--border-neutral);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
@@ -68,9 +68,56 @@ body {
   background-color: var(--interactive-tertiary);
 }
 
+.sidebar-nav-item.active {
+  background-color: var(--interactive-tertiary);
+  font-weight: var(--font-weight-semibold);
+}
+
 /* Content area */
 .content {
   margin-left: var(--sidebar-width);
   flex: 1;
-  padding: var(--spacing-lg);
+  padding: 48px 88px;
+}
+
+/* Page typography */
+.page-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--content-primary);
+  margin-bottom: 32px;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-description {
+  color: var(--content-secondary);
+}
+
+/* Logo display */
+.logo-cards {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.logo-card {
+  flex: 1;
+  height: 60vh;
+  height: 60dvh;
+  background-color: var(--interactive-tertiary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.logo-display {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
 }

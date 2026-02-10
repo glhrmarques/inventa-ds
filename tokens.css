@@ -20,16 +20,17 @@
   --border-hover:    #1A1A1A;
 
 
-  --status-negatie: #CC0F26;
+  --status-negatie:  #CC0F26;
   --status-positive: #078A00;
 
   /* Typography */
   --font-family-base: 'Manrope', sans-serif;
 
-  --font-size-sm:  12px;
+  --font-size-sm:  14px;
 
-
-  --font-weight-regular: 400;
+  --font-weight-thin:  300;
+  --font-weight-regular:  400;
+  --font-weight-semibold: 600;
 
   /* Spacing */
   --spacing-sm:  12px;
