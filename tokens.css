@@ -1,6 +1,6 @@
 :root {
 
-  /* Colors*/
+  /* Colors */
 
   --brand-primary:   #005BE2;
   --brand-secondary: #143154;
@@ -9,30 +9,35 @@
   --interactive-secondary: #1A1A1A;
   --interactive-tertiary:  #F3F3F3;
 
-  --content-primary:   #1A1A1A;
-  --content-secondary: #6D6F70;
-  --content-tertiary:  #FFFFFF;
-  --content-link:      #1A1A1A;
+  --content-primary:   #FFFFFF;
+  --content-secondary: rgba(255, 255, 255, 0.5);
+  --content-tertiary:  #000000;
+  --content-link:      #FFFFFF;
 
-  --background-screen: #FFFFFF;
+  --background-screen:  #000000;
+  --background-surface: #0D0D0D;
 
-  --border-neutral:  #C7D3D9;
-  --border-hover:    #1A1A1A;
+  --border-neutral: #2D2D2D;
+  --border-hover:   #FFFFFF;
 
-
-  --status-negative:  #CC0F26;
+  --status-negative: #CC0F26;
   --status-positive: #078A00;
 
   /* Typography */
   --font-family-base: 'Manrope', sans-serif;
 
+  --font-size-xs:  12px;
   --font-size-sm:  14px;
+  --font-size-md:  16px;
+  --font-size-lg:  24px;
+  --font-size-xl:  40px;
 
-  --font-weight-thin:  300;
   --font-weight-regular:  400;
   --font-weight-semibold: 600;
+  --font-weight-bold:     700;
 
   /* Spacing */
+  --spacing-xs:  8px;
   --spacing-sm:  12px;
   --spacing-md:  16px;
   --spacing-lg:  24px;
@@ -45,4 +50,5 @@
 
   /* Layout */
   --sidebar-width: 237px;
+  --header-height: 80px;
 }

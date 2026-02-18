@@ -13,38 +13,51 @@
 </head>
 <body>
   <aside class="sidebar">
-    <div class="sidebar-logo">
-      <img src="../src/logo.svg" alt="Inventa" class="sidebar-logo-img">
+    <div class="sidebar-header">
+      <p class="sidebar-title">
+        <span>Inventa </span><span class="subtitle">Ds.</span>
+      </p>
     </div>
-    <nav class="sidebar-nav">
+    <div class="sidebar-section">
+      <p class="sidebar-section-label">Foundations</p>
+      <a href="#" class="sidebar-nav-item">Introduction</a>
       <a href="logo.html" class="sidebar-nav-item active">Logo</a>
       <a href="colors.html" class="sidebar-nav-item">Colors</a>
-      <a href="#" class="sidebar-nav-item">Buttons</a>
-      <a href="#" class="sidebar-nav-item">Form inputs</a>
-      <a href="#" class="sidebar-nav-item">Tabs and navigation</a>
       <a href="#" class="sidebar-nav-item">Icons</a>
-      <a href="#" class="sidebar-nav-item">Padding</a>
-      <a href="#" class="sidebar-nav-item">Photography</a>
-      <a href="#" class="sidebar-nav-item">Radius</a>
-      <a href="#" class="sidebar-nav-item">Size</a>
-      <a href="#" class="sidebar-nav-item">Spacing</a>
-      <a href="#" class="sidebar-nav-item">Transitions</a>
       <a href="#" class="sidebar-nav-item">Typography</a>
-    </nav>
+      <a href="#" class="sidebar-nav-item">Padding</a>
+      <a href="#" class="sidebar-nav-item">Radius</a>
+      <a href="#" class="sidebar-nav-item">Spacing</a>
+    </div>
+    <div class="sidebar-section">
+      <p class="sidebar-section-label flex items-center justify-between">
+        Components
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="4" width="6" height="8" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+          <path d="M6 4V3a2 2 0 1 1 4 0v1" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </p>
+    </div>
   </aside>
-  <main class="content">
-    <h1 class="page-title">Logo</h1>
-    <section class="page-section">
-      <p class="page-description">The Inventa logo expresses confidence and innovation through a clean, contemporary typographic design. Its rounded forms and custom lettering create an approachable, modern identity, while the vibrant blue conveys technology, optimism, and credibility within an ever-evolving digital landscape.</p>
-      <div class="flex gap-6">
-        <div class="flex-1 h-[60dvh] bg-[var(--brand-primary)] rounded-lg flex items-center justify-center p-12">
-          <img src="../src/inventa-logo-white.svg" alt="Inventa logo on dark background" class="w-[70%] h-auto object-contain">
+
+  <div class="content-wrapper">
+    <header class="content-header">
+      <span class="content-header-year">2025</span>
+    </header>
+    <main class="content">
+      <h1 class="page-title">Logo</h1>
+      <section class="page-section">
+        <p class="page-description">The Inventa logo expresses confidence and innovation through a clean, contemporary typographic design. Its rounded forms and custom lettering create an approachable, modern identity, while the vibrant blue conveys technology, optimism, and credibility within an ever-evolving digital landscape.</p>
+        <div class="flex gap-6">
+          <div class="flex-1 h-[60dvh] bg-[var(--brand-primary)] rounded-lg flex items-center justify-center p-12">
+            <img src="../src/inventa-logo-white.svg" alt="Inventa logo on blue background" class="w-[70%] h-auto object-contain">
+          </div>
+          <div class="flex-1 h-[60dvh] bg-[#1A1A1A] rounded-lg flex items-center justify-center p-12 border border-[var(--border-neutral)]">
+            <img src="../src/inventa-logo-white.svg" alt="Inventa logo on dark background" class="w-[70%] h-auto object-contain">
+          </div>
         </div>
-        <div class="flex-1 h-[60dvh] bg-[var(--interactive-tertiary)] rounded-lg flex items-center justify-center p-12">
-          <img src="../src/logo.svg" alt="Inventa logo on light background" class="w-[70%] h-auto object-contain">
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
