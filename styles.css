@@ -99,7 +99,7 @@ body {
 }
 
 .sidebar-nav-item.active {
-  font-weight: var(--font-weight-semibold);
+  background-color: var(--border-neutral);
 }
 
 /* Content wrapper */
