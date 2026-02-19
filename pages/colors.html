@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../tokens.css">
   <link rel="stylesheet" href="../styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../cursor-glow.js" defer></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -45,154 +46,94 @@
       <span class="content-header-year">2025</span>
     </header>
     <main class="content">
-      <h1 class="page-title">Colors</h1>
+      <div class="page-intro">
+        <h1 class="page-title">Colors</h1>
+        <p class="page-subtitle">Learn how to work with our color system</p>
+      </div>
 
-      <!-- Brand -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Brand</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--brand-primary);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--brand-primary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#005BE2</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--brand-secondary);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--brand-secondary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#143154</p>
-            </div>
-          </div>
+      <!-- Core colors -->
+      <div class="color-card">
+        <h2 class="color-card-title">Core colors</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #005BE2;"></div>
+          <span class="color-token">--ds-inventa-light</span>
         </div>
-      </section>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #143154;"></div>
+          <span class="color-token">--ds-inventa-dark</span>
+        </div>
+      </div>
 
       <!-- Interactive -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Interactive</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--interactive-primary);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-primary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#005BE2</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--interactive-secondary);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-secondary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#1A1A1A</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--interactive-tertiary);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--interactive-tertiary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#F3F3F3</p>
-            </div>
-          </div>
+      <div class="color-card">
+        <h2 class="color-card-title">Interactive</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #005BE2;"></div>
+          <span class="color-token">--ds-blue-interactive-primary</span>
         </div>
-      </section>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #1A1A1A;"></div>
+          <span class="color-token">--ds-blue-interactive-secondary</span>
+        </div>
+      </div>
 
       <!-- Content -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Content</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: #FFFFFF;"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--content-primary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#FFFFFF</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: rgba(255,255,255,0.5);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--content-secondary</p>
-              <p class="text-sm text-[var(--content-secondary)]">rgba(255,255,255,0.5)</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: #000000; border: 1px solid var(--border-neutral);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--content-tertiary</p>
-              <p class="text-sm text-[var(--content-secondary)]">#000000</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: #FFFFFF;"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--content-link</p>
-              <p class="text-sm text-[var(--content-secondary)]">#FFFFFF</p>
-            </div>
-          </div>
+      <div class="color-card">
+        <h2 class="color-card-title">Content</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #1A1A1A;"></div>
+          <span class="color-token">--ds-content-primary</span>
         </div>
-      </section>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #6D6F70;"></div>
+          <span class="color-token">--ds-content-secondary</span>
+        </div>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+          <span class="color-token">--ds-content-tertiary</span>
+        </div>
+      </div>
 
       <!-- Background -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Background</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--background-screen);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--background-screen</p>
-              <p class="text-sm text-[var(--content-secondary)]">#000000</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0 border border-[var(--border-neutral)]" style="background-color: var(--background-surface);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--background-surface</p>
-              <p class="text-sm text-[var(--content-secondary)]">#0D0D0D</p>
-            </div>
-          </div>
+      <div class="color-card">
+        <h2 class="color-card-title">Background</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+          <span class="color-token">--ds-background-100</span>
         </div>
-      </section>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #F3F3F3;"></div>
+          <span class="color-token">--ds-background-200</span>
+        </div>
+      </div>
 
       <!-- Border -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Border</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--border-neutral);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--border-neutral</p>
-              <p class="text-sm text-[var(--content-secondary)]">#2D2D2D</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--border-hover);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--border-hover</p>
-              <p class="text-sm text-[var(--content-secondary)]">#FFFFFF</p>
-            </div>
-          </div>
+      <div class="color-card">
+        <h2 class="color-card-title">Border</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #C7D3D9;"></div>
+          <span class="color-token">--ds-border-100</span>
         </div>
-      </section>
+      </div>
 
-      <!-- Status -->
-      <section class="page-section mb-10">
-        <h2 class="text-xl font-semibold text-[var(--content-primary)] mb-4">Status</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--status-negative);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--status-negative</p>
-              <p class="text-sm text-[var(--content-secondary)]">#CC0F26</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 rounded-lg border border-[var(--border-neutral)] p-4">
-            <div class="w-16 h-16 rounded-md shrink-0" style="background-color: var(--status-positive);"></div>
-            <div>
-              <p class="text-sm font-semibold text-[var(--content-primary)]">--status-positive</p>
-              <p class="text-sm text-[var(--content-secondary)]">#078A00</p>
-            </div>
-          </div>
+      <!-- Sentiment -->
+      <div class="color-card">
+        <h2 class="color-card-title">Sentiment</h2>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #CC0F26;"></div>
+          <span class="color-token">--ds-sentiment-negative</span>
         </div>
-      </section>
+        <div class="color-divider"></div>
+        <div class="color-row">
+          <div class="color-swatch" style="background-color: #078A00;"></div>
+          <span class="color-token">--ds-sentiment-positive</span>
+        </div>
+      </div>
     </main>
   </div>
 </body>
